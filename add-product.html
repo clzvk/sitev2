@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product - Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos CSS inline para demonstração */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .add-product-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .add-product-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .add-product-container input, .add-product-container button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .add-product-container button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .add-product-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="add-product-container">
+        <form id="add-product-form" class="add-product-form">
+            <h2>Add Product</h2>
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="text" id="product-description" placeholder="Product Description" required>
+            <input type="number" id="product-price" placeholder="Product Price" required>
+            <input type="file" id="product-image" accept="image/*" required>
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+    <script src="add-product.js"></script>
+</body>
+</html>
